@@ -8,7 +8,7 @@ const VideoModal = ({ videoData, setOpenModal }) => {
         onClick={() => setOpenModal(false)}
       ></div>
 
-      <video className="w-full relative" autoPlay controls playsInline>
+      <video className="w-full relative max-w-[1200px]" autoPlay controls playsInline>
         <source type="video/mp4" src={videoData.videoUrl} />
       </video>
     </div>
