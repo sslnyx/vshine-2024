@@ -11,7 +11,7 @@ const siteLogo =
 const Home = () => {
   return (
     <div className="relative">
-      <div className="fixed top-0 left-0 w-screen h-screen bg-black/20 pointer-events-none"></div>
+      <div className="fixed top-0 left-0 w-screen h-screen bg-black/0 pointer-events-none"></div>
 
       <div className="w-screen h-svh">
         <video
@@ -26,12 +26,17 @@ const Home = () => {
       </div>
 
       <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
-        <img width={120} src={siteLogo} alt="siteLogo" />
+        <img
+          width={120}
+          src={siteLogo}
+          alt="siteLogo"
+          className=" drop-shadow-4xl"
+        />
 
         {/* <h2 className="text-white font-serif tracking-[2px] text-5xl">VSHINE STUDIO</h2> */}
       </div>
 
-      <div className="container relative justify-center flex items-center">
+      <div className="container relative justify-center flex items-center drop-shadow-4xl">
         <Link
           to="wedding"
           className="absolute bottom-10 flex flex-col items-center"

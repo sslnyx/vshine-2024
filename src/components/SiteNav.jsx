@@ -19,7 +19,7 @@ const SiteNav = ({ activeNav, setActiveNav }) => {
         <div></div>
 
         <div
-          className="p-3 relative cursor-pointer -mr-3"
+          className="p-3 relative cursor-pointer -mr-3 drop-shadow-4xl"
           onClick={() => setActiveNav((prev) => !prev)}
         >
           {[0, 1, 2].map((el, i) => (
