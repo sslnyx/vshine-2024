@@ -56,10 +56,12 @@ const Weddings = () => {
         <div className="absolute container w-full h-full pointer-events-none">
           <h2 className="absolute -top-10">{videoData[currentSlide].title}</h2>
           <div
-            className="bg-black rounded-full w-[120px] h-[120px] flex justify-center items-center absolute right-5 md:right-16 -bottom-[150px] pointer-events-auto md:bottom-5 cursor-pointer"
+            className="bg-white rounded-full p-1 flex justify-center items-center absolute right-5 md:right-16 -bottom-[150px] pointer-events-auto md:bottom-5 cursor-pointer"
             onClick={() => setOpenModal(true)}
           >
-            <h2 className="text-white font-serif text-2xl ">Play</h2>
+            <div className="bg-black  w-[120px] h-[120px] flex justify-center items-center rounded-full">
+              <h2 className="text-white font-serif text-2xl ">Play</h2>
+            </div>
           </div>
         </div>
 
