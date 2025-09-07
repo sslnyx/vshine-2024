@@ -34,5 +34,17 @@ export const videoData = [
         title: "Ankie & Luke",
         videoUrl: "https://storage.googleapis.com/vshine-studio/website-video/W06%20Ankie%20%26%20Luke.mp4",
         thumbnailUrl: "https://storage.googleapis.com/vshine-studio/website-video/wedding-thumbnail/W06%20Ankie%20%26%20Luke.jpg"
+    },
+    {
+        id: "video7",
+        title: "Jean & Brenton",
+        videoUrl: "https://storage.googleapis.com/vshine-studio/website-video/W07_Jean_%26_Brenton.mp4",
+        thumbnailUrl: "https://storage.googleapis.com/vshine-studio/website-video/wedding-thumbnail/W07_Jean_%26_Brenton.jpg"
+    },
+    {
+        id: "video8",
+        title: "Ivy & Jerry",
+        videoUrl: "https://storage.googleapis.com/vshine-studio/website-video/W08_Ivy_%26_Jerry.mp4",
+        thumbnailUrl: "https://storage.googleapis.com/vshine-studio/website-video/wedding-thumbnail/W08_Ivy_%26_Jerry.jpg"
     }
 ];
