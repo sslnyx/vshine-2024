@@ -7,6 +7,8 @@ import Arrow from "../../components/Arrow";
 import VideoModal from "./VideoModal";
 // import "./styles.css"
 
+const reversedVideoData = [...videoData].reverse();
+
 const Weddings = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -39,10 +41,11 @@ const Weddings = () => {
     <div className="h-svh flex items-center">
       <div className="navigation-wrapper w-full relative flex justify-center">
         <div ref={sliderRef} className="keen-slider">
-          {videoData.map(({ id, title, videoUrl, thumbnailUrl }, i) => (
+          {reversedVideoData.map(({ id, title, videoUrl, thumbnailUrl }, i) => (
             <div
               key={id}
-              className={`keen-slider__slide number-slide${i} pt-[calc(3/4*100%)] md:pt-[calc(1/3*100%)] relative`}
+              className={`keen-slider__slide number-slide${i} pt-[calc(3/4*100%)] md:pt-[calc(1/3*100%)] relative cursor-pointer`}
+              onClick={() => setOpenModal(true)}
             >
               <img
                 src={thumbnailUrl}
@@ -54,7 +57,7 @@ const Weddings = () => {
         </div>
 
         <div className="absolute container w-full h-full pointer-events-none">
-          <h2 className="absolute -top-10">{videoData[currentSlide].title}</h2>
+          <h2 className="absolute -top-10">{reversedVideoData[currentSlide].title}</h2>
           <div
             className="bg-white rounded-full p-1 flex justify-center items-center absolute right-5 md:right-16 -bottom-[150px] pointer-events-auto md:bottom-5 cursor-pointer"
             onClick={() => setOpenModal(true)}
@@ -92,7 +95,7 @@ const Weddings = () => {
 
       {openModal && (
         <VideoModal
-          videoData={videoData[currentSlide]}
+          videoData={reversedVideoData[currentSlide]}
           setOpenModal={setOpenModal}
         />
       )}

@@ -27,6 +27,12 @@ export const videoData = [
         id: "video5",
         title: "Tiffany & Peter",
         videoUrl: "https://storage.googleapis.com/vshine-studio/website-video/W05%20Tiffany%20%26%20Peter.mp4",
-        thumbnailUrl: "https://storage.googleapis.com/vshine-studio/website-video/wedding-thumbnail/W05%20Tiffany%20%26%20Peter.jpg"
+        thumbnailUrl: "https://storage.googleapis.com/vshine-studio/website-video/wedding-thumbnail/W05A%20Tiffany%20%26%20Peter.jpg"
+    },
+    {
+        id: "video6",
+        title: "Ankie & Luke",
+        videoUrl: "https://storage.googleapis.com/vshine-studio/website-video/W06%20Ankie%20%26%20Luke.mp4",
+        thumbnailUrl: "https://storage.googleapis.com/vshine-studio/website-video/wedding-thumbnail/W06%20Ankie%20%26%20Luke.jpg"
     }
 ];
