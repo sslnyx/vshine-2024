@@ -47,17 +47,21 @@ const Weddings = () => {
               className={`keen-slider__slide number-slide${i} pt-[calc(3/4*100%)] md:pt-[calc(1/3*100%)] relative cursor-pointer`}
               onClick={() => setOpenModal(true)}
             >
-              <img
-                src={thumbnailUrl}
-                alt="thumbnail"
-                className="absolute top-0 left-0 h-full w-full object-cover"
-              />
+              <div className="absolute top-0 left-0 w-full h-full">
+                <img
+                  src={thumbnailUrl}
+                  alt="thumbnail"
+                  className="h-full w-full object-cover -translate-y-[1px]"
+                />
+              </div>
             </div>
           ))}
         </div>
 
         <div className="absolute container w-full h-full pointer-events-none">
-          <h2 className="absolute -top-10">{reversedVideoData[currentSlide].title}</h2>
+          <h2 className="absolute -top-10">
+            {reversedVideoData[currentSlide].title}
+          </h2>
           <div
             className="bg-white rounded-full p-1 flex justify-center items-center absolute right-5 md:right-16 -bottom-[150px] pointer-events-auto md:bottom-5 cursor-pointer"
             onClick={() => setOpenModal(true)}
